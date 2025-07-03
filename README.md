@@ -5,19 +5,19 @@
     <img src="docs/images/logo.png" alt="Logo" width="100" height="100">
   </a>
 
-  <h3 align="center">TITRE 🦆</h3>
+  <h3 align="center">TP2 - Bily Halle 🦆</h3>
 
   <p align="center">
-    Project DESCRIPTON
+    Installation un système de conteneurs et création de conteneurs
     <br />
     <a href="#about"><strong>Explore the screenshots »</strong></a>
       <br />
       <br />
-      <a href="https://github.com/TheBeesness/project_ver_mac/issues/new?assignees=&labels=bug&template=01_BUG_REPORT.md&title=bug%3A+">Report a Bug</a>
+      <a href="https://github.com/majeurbilly/ISS---TravailPratique02/issues/new?assignees=&labels=bug&template=01_BUG_REPORT.md&title=bug%3A+">Report a Bug</a>
       ·
-      <a href="https://github.com/TheBeesness/project_ver_mac/issues/new?assignees=&labels=enhancement&template=02_FEATURE_REQUEST.md&title=feat%3A+">Request a Feature</a>
+      <a href="https://github.com/majeurbilly/ISS---TravailPratique02/issues/new?assignees=&labels=enhancement&template=02_FEATURE_REQUEST.md&title=feat%3A+">Request a Feature</a>
       ·
-      <a href="https://github.com/TheBeesness/project_ver_mac/issues/new?assignees=&labels=question&template=04_SUPPORT_QUESTION.md&title=support%3A+">Ask a Question</a>
+      <a href="https://github.com/majeurbilly/ISS---TravailPratique02/issues/new?assignees=&labels=question&template=04_SUPPORT_QUESTION.md&title=support%3A+">Ask a Question</a>
   </p>
 </div>
 
