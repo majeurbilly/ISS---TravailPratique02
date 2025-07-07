@@ -151,7 +151,7 @@ L'image montre la page du gestionnaire de mises à jour de Drupal, confirmant l'
 - **Drupal 9 (image drupal:9)**
 - **PostgreSQL (image postgres:latest)**
 - **Git (installé dans l'image Drupal)**
-- **Thème Bootstrap (cloné via Git)**
+- **Thème Bootstrap**
 
 
 
