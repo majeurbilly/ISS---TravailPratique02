@@ -98,9 +98,45 @@ http://localhost
     Captures d'écran section 2 🖼️
     
  </summary>
- <img src="docs/images/logs.png" alt="test">
+ <br>
+Construction d'une image Docker à partir du Dockerfile présent dans le répertoire courant :
+ <img src="mon_drupal/img/1-docker_build_success.png" alt="test">
 <br>
 <br>
+ Liste toutes les images Docker stockées localement sur la machine :
+ <img src="mon_drupal/img/2-docker_images_list.png" alt="test">
+ <br>
+<br>
+Lister tous les conteneurs Docker actuellement en cours d'exécution sur le système :
+<img src="mon_drupal/img/3-Docker-PS-Postgres-Container-Running.png.png" alt="test">
+ <br>
+<br>
+Créer et de démarrer un nouveau conteneur Docker en lui attribuant le nom drupal-postgres : 
+<img src="mon_drupal/img/4-Docker-Run-PostgreSQL-Image-Pull.png.png" alt="test">
+ <br>
+<br>
+Crée un nouveau volume Docker persistant nommé drupal-data <img src="mon_drupal/img/5-Drupal-Docker-Volume-Creation.png.png" alt="test">
+ <br>
+<br>
+Lister tous les conteneurs Docker actuellement en cours d'exécution sur le système : 
+<img src="mon_drupal/img/6-Docker-Images-List-and-Drupal-Run.png" alt="test">
+ <br>
+<br>
+Lister tous les conteneurs Docker actuellement en cours d'exécution sur le système :
+<img src="mon_drupal/img/7-Docker-PS-Drupal-Postgres-En-Cours.png" alt="test">
+ <br>
+ L'image présente la première étape de l'installation de Drupal 9.5.11 :
+ <img src="mon_drupal/img/8-Drupal-Installation-Etape1.png" alt="test">
+ <br>
+L'image présente la deuxième étape de l'installation de Drupal 9.5.11 :  <img src="img/9-Drupal-Installation-Etape2.png.png" alt="test">
+ <br>
+L'image illustre la page de configuration de la base de données de l'installation de Drupal 9.5.11  <img src="mon_drupal/img/10-Drupal-Installation-Etape3.png" alt="test">
+ <br>
+L'image montre la page d'accueil de l'interface d'administration de Drupal : <img src="mon_drupal/img/12-Drupal-Installation-Etape4.png" alt="test">
+ <br>
+L'image présente la page d'administration de Drupal permettant d'ajouter un nouveau thème : <img src="mon_drupal/img/13-Drupal-Installation-Etape5.png" alt="test">
+ <br>
+L'image montre la page du gestionnaire de mises à jour de Drupal, confirmant l'ajout réussi des fichiers et du thème Bootstrap : <img src="mon_drupal/img/14-Drupal-Installation-Etape6.png" alt="test">
  </details>
 
 ### Développé avec
@@ -112,7 +148,12 @@ http://localhost
 - **MongoDB Community Server**
 
 **Section 2 :**
-- **f**
+- **Docker Engine version 28.2.2**
+- **Drupal 9 (image drupal:9)**
+- **PostgreSQL (image postgres:latest)**
+- **Git (installé dans l'image Drupal)**
+- **Thème Bootstrap (cloné via Git)**
+
 
 
 
@@ -143,15 +184,20 @@ mongodb/mongodb-community-server`
 
 #### Section 2 :
 
-1. Install `...` 
-4. Install `...` 
-4. Install `...` 
-4. Install `...` 
-4. Install `...` 
-4. Install `...` 
-4. Install `...` 
-4. Install `...` 
-4. Install `...` 
+1. Docker Engine installé et en cours d'exécution. 
+2. Naviguez vers le répertoire mon_drupal/drupal où se trouve le Dockerfile
+3. Construisez votre image Drupal personnalisée - `docker build -t my-drupal:9 .` 
+4. Créez le volume pour PostgreSQL `docker volume create drupal-data` 
+5. Lancez le conteneur PostgreSQL `docker run -d --name drupal_db --network mon_reseau \
+  -e POSTGRES_DB=drupal_db \
+  -e POSTGRES_USER=drupal_user \
+  -e POSTGRES_PASSWORD=drupal_password \
+  -v drupal-data:/var/lib/postgresql/data \
+  postgres:latest` 
+6. Lancez le conteneur Drupal en exposant le port 8080 - `docker run -d --name my-drupal --network mon_reseau -p 8080:80 my-drupal:9` 
+7. Accédez à l'installation de Drupal dans votre navigateur - `http://localhost:8080` 
+8. configuration de Drupal 
+
 
 ## Auteurs & contributeurs
 
