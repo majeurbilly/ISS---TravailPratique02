@@ -1,7 +1,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://https://github.com/majeurbilly/ISS---TravailPratique02">
+  <a href="https://github.com/majeurbilly/ISS---TravailPratique02">
     <img src="docs/images/logo.png" alt="Logo" width="100" height="100">
   </a>
   
