@@ -1,7 +1,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/majeurbilly/project_name">
+  <a href="https://https://github.com/majeurbilly/ISS---TravailPratique02">
     <img src="docs/images/logo.png" alt="Logo" width="100" height="100">
   </a>
   
@@ -14,7 +14,7 @@
   <p align="center">
     Installation un système de conteneurs et création de conteneurs
     <br />
-    <a href="#about"><strong>Explore the screenshots »</strong></a>
+    <a href="#description"><strong>Captures d'écran 🖼️»</strong></a>
       <br />
       <br />
       <a href="https://github.com/majeurbilly/ISS---TravailPratique02/issues/new?assignees=&labels=bug&template=01_BUG_REPORT.md&title=bug%3A+">Report a Bug</a>
@@ -28,32 +28,30 @@
 
 
 
-  ## Table of Contents
+  ## Table des matières
   <ol>
     <li>
-      <a href="#about">About</a>
+      <a href="#description">Description</a>
       <ul>
-        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#développé-avec">Développé avec</a></li>
       </ul>
     </li>
     <li>
-      <a href="#getting-started">Getting Started</a>
+      <a href="#guide-dinstallation">Guide d'installation</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#prérequis">Prérequis</a></li>
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#monitoring-tools-overview">Monitoring Tools Overview</a></li>
-    <li><a href="#authors--contributors">Authors & Contributors</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <li><a href="#auteurs--contributeurs">Auteurs & contributeurs</a></li>
+    <li><a href="#Remerciment">Remerciment</a></li>
   </ol>
 
 
 
 
 <!-- ABOUT THE PROJECT -->
-## About
+## Description
 Ce projet comporte deux sections; 
 
 <br> La section 1, concerne la vérifier l'installation de Docker Engine et Docker Compose, puis de créer un réseau Docker privé avec des conteneurs Apache et MongoDB, en documentant toutes les étapes de vérification.
@@ -62,9 +60,7 @@ Ce projet comporte deux sections;
 
 <details>
  <summary>
-    <a href="#images">
-      <img src="docs/images/button.png" alt="button image" height="40">
-    </a>
+    Captures d'écran section 1 🖼️
     
  </summary>
 <br>
@@ -96,68 +92,72 @@ Afficher les journaux (logs) du conteneur Docker nommé "apache" :
 <br>
 http://localhost
 <img src="docs/images/localhost.png" alt="test">
-<br>
-<br>
-
-<img src="docs/images/img.png" alt="test">
-
-
-
 </details>
+<details>
+ <summary>
+    Captures d'écran section 2 🖼️
+    
+ </summary>
+ <img src="docs/images/logs.png" alt="test">
+<br>
+<br>
+ </details>
 
-### Built With
+### Développé avec
 
-- **Linux**
-<br>**Section 1 :**
+**Section 1 :**
 - **Docker Engine version 28.2.2**
 - **Docker Compose version v2.36.2**
-<br>**Section 1 :**
+- **Apache HTTP Server** (`httpd`)
+- **MongoDB Community Server**
 
-## Getting Started
+**Section 2 :**
+- **f**
 
-### Prerequisites
 
-To work with this project, you need to have:
 
-- **EXEMPLE**
-- **EXEMPLE**
-- **ETC** 
+## Guide d'installation
+
+### Prérequis
+
+Pour travailler sur ce projet, vous devez avoir :
+
+- **Linux**
+- **Ubuntu version 24.04.2**
+
 
 ### Installation
 
-1. Open your **terminal**.
-2. Install `...` 
-3. Install `...` 
+#### Section 1 :
+
+1. Ouverez votre  **terminal**.
+2. Crée le réseau virtuel - `docker network create mon_reseau` 
+3. Crée le volume MongoDB - `docker volume create mongodb` 
+4. Lance le conteneur Apache - `docker run -d --name apache -p 80:80 --network mon_reseau httpd:latest` 
+5. Lance le conteneur MongoDB - `docker run -d --name mongodb --network mon_reseau \
+-v mongodb:/data/db \
+-e MONGO_INITDB_ROOT_USERNAME=adminmongo \
+-e MONGO_INITDB_ROOT_PASSWORD=EncoreUneAutreBD \
+mongodb/mongodb-community-server` 
+6. Vérifie que vos conteneurs sont en cours d'exécution - `docker ps` 
+
+#### Section 2 :
+
+1. Install `...` 
 4. Install `...` 
-5. Run the program:
-   `...` 
+4. Install `...` 
+4. Install `...` 
+4. Install `...` 
+4. Install `...` 
+4. Install `...` 
+4. Install `...` 
+4. Install `...` 
 
-## Usage
+## Auteurs & contributeurs
 
-### Backend
+Billy Hallé
 
-1. In `main`...
-2. Run:
-   `...` 
-
-
-
-## Monitoring Tools Overview
-
-### **EXEMPLE**
-...
-
-### **EXEMPLE**
-...
-
-### **EXEMPLE**
-...
-
-## Authors & Contributors
-
-...
-
-## Acknowledgments
+## Remerciment
 
 Remerciment:
 
