@@ -44,7 +44,6 @@
       </ul>
     </li>
     <li><a href="#auteurs--contributeurs">Auteurs & contributeurs</a></li>
-    <li><a href="#Remerciment">Remerciment</a></li>
   </ol>
 
 
@@ -202,13 +201,6 @@ mongodb/mongodb-community-server`
 ## Auteurs & contributeurs
 
 Billy Hallé
-
-## Remerciment
-
-Remerciment:
-
-* [EXEMPLE](https://EXEMPLE.io/)
-* [EXEMPLE](https://EXEMPLE.com/)
 
 <p align="right">(<a href="https://github.com/majeurbilly/ISS---TravailPratique02">back to top</a>)</p>
 
