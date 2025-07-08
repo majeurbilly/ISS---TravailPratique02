@@ -39,7 +39,6 @@
     <li>
       <a href="#guide-dinstallation">Guide d'installation</a>
       <ul>
-        <li><a href="#prérequis">Prérequis</a></li>
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
@@ -157,14 +156,6 @@ L'image montre la page du gestionnaire de mises à jour de Drupal, confirmant l'
 
 
 ## Guide d'installation
-
-### Prérequis
-
-Pour travailler sur ce projet, vous devez avoir :
-
-- **Linux**
-- **Ubuntu version 24.04.2**
-
 
 ### Installation
 
